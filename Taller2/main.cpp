@@ -8,7 +8,7 @@ void limpiarBuffer() {
 }
 
 int main() {
-    Hospital hospital;
+    Hospital hospital;// test
     int opcion;
 
     std::cout << "Cargando pacientes desde archivo...\n";
