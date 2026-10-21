@@ -1,7 +1,7 @@
 #ifndef COLA_HPP
 #define COLA_HPP
 
-#include "LinkedList.hpp"
+#include "Lista.hpp"
 
 template <typename T>
 class Cola {
