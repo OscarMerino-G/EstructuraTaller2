@@ -3,7 +3,7 @@
 
 #include <string>
 #include "../clases/Paciente.hpp"
-#include "List.hpp"
+#include "Lista.hpp"
 
 class AVLNodo {
 public:
