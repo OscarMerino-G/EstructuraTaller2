@@ -5,7 +5,7 @@ AVLNodo::AVLNodo(Paciente* paciente) {
 	id = paciente->getId();
 	nombre = paciente->getNombre();
 	servicioDestino = paciente->getServicio();
-    edad = song->getEdad();
+    edad = paciente->getEdad();
 }
 
 AVLTree::AVLTree() {
