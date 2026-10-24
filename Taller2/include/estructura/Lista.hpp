@@ -1,6 +1,7 @@
 #ifndef LISTA_HPP
 #define LISTA_HPP
 
+#include <cstddef>
 #include "Nodo.hpp"
 
 template <typename T>
@@ -9,47 +10,43 @@ private:
     Nodo<T>* head;
     Nodo<T>* tail;
     size_t count;
-    
+
+    Nodo<T>* getNodoAt(size_t index) const;
+
 public:
-	
-	// constructor y destructor
+    // constructor y destructor
     Lista();
     ~Lista();
-    
-    bool isEmpty() const; // cap
+
+    Lista(const Lista&) = delete;
+    Lista& operator=(const Lista&) = delete;
+
+    bool isEmpty() const; 
     size_t size() const;
     void clear();
-    
 
-    T& front(); // Acecso 
+    T& front(); //// usar para acceder a la lista°
     const T& front() const;
     T& back();
     const T& back() const;
     T& at(size_t index);
     const T& at(size_t index) const;
-    
-    
 
-    void pushFront(const T& data); // Insercion
+    void pushFront(const T& data); // insersion
     void pushBack(const T& data);
     void insertAt(size_t index, const T& data);
 
-
-    void popFront(); // Eliminacion
+    void popFront(); // eliminiacion
     void popBack();
     void removeAt(size_t index);
     bool remove(const T& data);
-    
 
-    int find(const T& data) const; // Busqueda
+    int find(const T& data) const; // busqueda
     bool contains(const T& data) const;
 
-    Nodo<T>* getHead() const; // Recorre la lista
+    Nodo<T>* getHead() const; // 
     Nodo<T>* getTail() const;
-    
-    
-private:
-    Nodo<T>* getNodoEn(size_t index) const;
 };
+
 #include "../../src/estructura/Lista.cpp"
 #endif
