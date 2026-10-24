@@ -26,10 +26,12 @@ public:
     
     T& at(size_t index);
     const T& at(size_t index) const;
+
     void insertAt(size_t index, const T& data); // Inserta el elemento en X posicion
     void removeAt(size_t index); // Elimina el elemento en la posicon X
-    LinkedList<T>& getList();
-    const LinkedList<T>& getList() const;
+    Lista<T>& getList();
+
+    const Lista<T>& getList() const;
 };
 
 #include "../../src/estructura/Cola.cpp"
