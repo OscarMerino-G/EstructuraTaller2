@@ -1,6 +1,6 @@
 #ifndef ARBOLDECISION_HPP
 #define ARBOLDECISION_HPP
-<<<<<<<<<<<<<<<<<
+
 #include <string>
 #include "../clases/Paciente.hpp"
 
