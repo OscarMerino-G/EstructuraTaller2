@@ -9,7 +9,8 @@ Extender el sistema desarrollado en el Taller 1 :trollface: para clasificar auto
 
 # Arbol de decision
 
-ArbolDecision rama izquierda = "Si", derecha = "No". Las preguntas son nodos internos y los servicios son hojas. Permite construccion, recorridos (pre/in/postorden), evaluacion de un paciente y obtencion del servicio resultante. Opcion ]7[ del menu muestra el arbol con la justificacion de cada decision.
+ArbolDecision rama izquierda = "Si", derecha = "No". Las preguntas son nodos internos y los servicios son hojas. Perm
+ite construccion, recorridos (pre/in/postorden), evaluacion de un paciente y obtencion del servicio resultante. Opcion ]7[ del menu muestra el arbol con la justificacion de cada decision.
 funciona siguiendo la lógica:
  |Edad < 14?           -> Si: Pediatria
 .| No: Trauma == 1?
