@@ -6,10 +6,12 @@ Extender el sistema desarrollado en el Taller 1 :trollface: para clasificar auto
 >Oscar Merino | 21279689-1 | GitHub: OscarMerino-G | ICCI | C2
 
 # Compilar
+ingresar el siguiente comando en la consola
 ```
 g++ -std=c++17 -g -Iinclude main.cpp src/Hospital.cpp src/clases/Paciente.cpp src/estructura/AVL.cpp src/estructura/ArbolDecision.cpp -o main
 ```
 # Ejecutar
+ingresar el siguiente comando en la consola
 ```
 ./main
 ```
