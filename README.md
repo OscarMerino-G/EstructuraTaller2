@@ -13,16 +13,16 @@ ArbolDecision rama izquierda = "Si", derecha = "No". Las preguntas son nodos int
 funciona siguiendo la lógica:
 ```
 
-Edad < 14?                      -> Si: Pediatria
+Edad < 14?                                      -> Si: Pediatria
  No: Trauma == 1?
-   Si: RequiereCirugia == 1?    -> Si: Cirugia   | No: Traumatologia
-   No: SintomasNeurologicos == 1? -> Si: Neurologia
-     No: TipoDolor == pecho?    -> Si: Cardiologia
-       No: Temperatura >= 38.5? -> Si: Urgencias
-         No: Dolor >= 8?        -> Si: Urgencias
-           No: PresionArterial >= 180? -> Si: Urgencias
-             No: PresionArterial < 90? -> Si: Urgencias
-               No: RequiereCirugia == 1? -> Si: Cirugia
+   Si: RequiereCirugia == 1?                   -> Si: Cirugia   | No: Traumatologia
+   No: SintomasNeurologicos == 1?              -> Si: Neurologia
+     No: TipoDolor == pecho?                   -> Si: Cardiologia
+       No: Temperatura >= 38.5?                -> Si: Urgencias
+         No: Dolor >= 8?                       -> Si: Urgencias
+           No: PresionArterial >= 180?         -> Si: Urgencias
+             No: PresionArterial < 90?         -> Si: Urgencias
+               No: RequiereCirugia == 1?       -> Si: Cirugia
                  No: DiasHospitalizacion >= 2? -> Si: Hospitalizacion | No: Medicina General
 
 ```
