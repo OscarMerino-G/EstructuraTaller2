@@ -12,6 +12,7 @@ Extender el sistema desarrollado en el Taller 1 :trollface: para clasificar auto
 ArbolDecision rama izquierda = "Si", derecha = "No". Las preguntas son nodos internos y los servicios son hojas. Permite construccion, recorridos (pre/in/postorden), evaluacion de un paciente y obtencion del servicio resultante. Opcion ]7[ del menu muestra el arbol con la justificacion de cada decision.
 funciona siguiendo la lógica:
 ```
+
 Edad < 14?                      -> Si: Pediatria
  No: Trauma == 1?
    Si: RequiereCirugia == 1?    -> Si: Cirugia   | No: Traumatologia
@@ -23,6 +24,7 @@ Edad < 14?                      -> Si: Pediatria
              No: PresionArterial < 90? -> Si: Urgencias
                No: RequiereCirugia == 1? -> Si: Cirugia
                  No: DiasHospitalizacion >= 2? -> Si: Hospitalizacion | No: Medicina General
+
 ```
 
 La condicion "o" de Urgencias se implementa como una cadena de preguntas simples, la ruta mostrada indica cual condicion se cumplio.
