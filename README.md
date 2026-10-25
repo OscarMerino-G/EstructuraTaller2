@@ -5,8 +5,10 @@ Extender el sistema desarrollado en el Taller 1 :trollface: para clasificar auto
 # Integrante 
 >Oscar Merino | 21279689-1 | GitHub: OscarMerino-G | ICCI | C2
 
-
-
+# Compilar
+> g++ -std=c++17 -g -Iinclude main.cpp src/Hospital.cpp src/clases/Paciente.cpp src/estructura/AVL.cpp src/estructura/ArbolDecision.cpp -o main
+# Ejecutar
+>./main
 # Arbol de decision
 
 ArbolDecision rama izquierda = "Si", derecha = "No". Las preguntas son nodos internos y los servicios son hojas. Permite construccion, recorridos (pre/in/postorden), evaluacion de un paciente y obtencion del servicio resultante. Opcion ]7[ del menu muestra el arbol con la justificacion de cada decision.
