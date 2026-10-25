@@ -77,12 +77,12 @@ void Cola<T>::removeAt(size_t index) {
 }
 
 template <typename T>
-LinkedList<T>& Cola<T>::getList() {
+Lista<T>& Cola<T>::getList() {
     return list;
 }
 
 template <typename T>
-const LinkedList<T>& Cola<T>::getList() const {
+const Lista<T>& Cola<T>::getList() const {
     return list;
 }
 
