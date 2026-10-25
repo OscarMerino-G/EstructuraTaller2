@@ -138,7 +138,7 @@ void Lista<T>::popFront() {
         head = tail = nullptr;
     } else {
         head = head->next;
-        head->prev = nullptr
+        head->prev = nullptr;
     }
     delete temp;
     count--;
